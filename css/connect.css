@@ -160,22 +160,13 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .grid {
-    grid-template-columns: 20vw 20vw 40vw 20vw;
+    grid-template-columns: 15vw 25vw 45vw 15vw;
     grid-template-rows: 12vh 5vh minmax(80vh, max-content);
     row-gap: 2%;
   }
 
   .header {
     grid-column: 1/5;
-  }
-
-  .header-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    gap: 3%;
   }
 
   .info {
@@ -194,7 +185,6 @@ textarea {
 
   .nav-collapse a {
     font-size: 24px;
-    font-family: "Lilita One", sans-serif;
   }
 
   .form-container {
