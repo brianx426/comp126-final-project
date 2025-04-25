@@ -84,8 +84,15 @@
   width: 100%;
   background: transparent;
   border-bottom: 1px solid white;
-  /* padding: 0.7em 1em; */
   float: left;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .nav-collapse a {
+    text-align: center;
+    border-bottom: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -100,6 +107,7 @@
     float: left;
     text-align: center;
     border-bottom: 0;
+    font-size: 24px;
   }
 }
 
