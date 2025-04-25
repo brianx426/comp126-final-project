@@ -65,6 +65,11 @@ body {
   font-family: "Lilita One", sans-serif;
 }
 
+.nav-collapse a:hover {
+  color: #d77c16;
+  -webkit-text-stroke: 0.5px #ffffff;
+}
+
 .search-bar-container {
   grid-row: 2/3;
   grid-column: 1/2;
@@ -160,7 +165,7 @@ input {
   }
 
   .info {
-    font-size: 40px;
+    font-size: 32px;
   }
 
   .home-icon {
