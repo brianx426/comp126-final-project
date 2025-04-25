@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Kagawa - Home</title>
+    <title>Kagawa - Attractions</title>
     <link href="css/attractions.css" rel="stylesheet" type="text/css" />
     <link href="css/responsive-nav.css" rel="stylesheet" type="text/css" />
     <script src="js/responsive-nav.js"></script>
@@ -20,5 +20,129 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body></body>
+  <body>
+    <body>
+      <div class="grid">
+        <header class="header">
+          <div class="header-box">
+            <!-- left side -->
+            <div class="header-left">
+              <a href="index.html">
+                <img
+                  class="home-icon"
+                  src="img/white-home.png"
+                  alt="white home icon"
+                />
+              </a>
+              <h1 class="info">Kagawa - Attractions</h1>
+            </div>
+            <!-- right side -->
+            <nav class="nav-collapse">
+              <ul>
+                <li><a href="info.html">Info</a></li>
+                <li>
+                  <a class="active" href="attractions.html">Attractions</a>
+                </li>
+                <li><a href="connect.html">Connect</a></li>
+                <li>
+                  <a
+                    href="https://www.booking.com/index.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaKACiAEBmAExuAEHyAEM2AEB6AEB-AECiAIBqAIDuAKe4qHABsACAdICJDc3NDUwODFjLTRhN2UtNGZkYy04ZGI0LWE3Y2E2NGVhOTA3MNgCBeACAQ&selected_currency=USD&sid=89a6afa4ecb9250e8da5d68b6e83fa90"
+                    target="_blank"
+                    >Book a Trip <i class="fa fa-external-link"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="search-bar-container">
+          <form method="get" action="/">
+            <input type="text" placeholder="Search for Attractions..." />
+            <button class="btn" onclick="return handleEvent(event)">
+              Search
+            </button>
+          </form>
+        </div>
+
+        <div class="attractions-content-container">
+          <ul class="attractions-list">
+            <li>
+              <a href="#">
+                Ritsurin Garden
+                <img
+                  src="img/ritsurinpark.png"
+                  alt="photo of Ritsurin Garden"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Naoshima
+                <img src="img/naoshima.png" alt="photo of Naoshima" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                Setonaikai National Park
+                <img
+                  src="img/snp.png"
+                  alt="photo of Setonaikai National Park"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script>
+        var navigation = responsiveNav(".nav-collapse", {
+          animate: true, // Boolean: Use CSS3 transitions, true or false
+          transition: 284, // Integer: Speed of the transition, in milliseconds
+          label: "Menu", // String: Label for the navigation toggle
+          insert: "after", // String: Insert the toggle before or after the navigation
+          customToggle: "", // Selector: Specify the ID of a custom toggle
+          closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+          openPos: "relative", // String: Position of the opened nav, relative or static
+          navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+          navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
+          jsClass: "js", // String: 'JS enabled' class which is added to <html> element
+          init: function () {}, // Function: Init callback
+          open: function () {}, // Function: Open callback
+          close: function () {}, // Function: Close callback
+        });
+
+        function handleEvent(event) {
+          event.preventDefault();
+          return false;
+        }
+      </script>
+    </body>
+  </body>
 </html>
+
+<header class="header">
+  <div class="header-box">
+    <!-- left side -->
+    <a href="index.html">
+      <img class="home-icon" src="img/white-home.png" alt="white home icon" />
+    </a>
+    <h1 class="info">Kagawa - Attractions</h1>
+    <!-- right side -->
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="info.html">Info</a></li>
+        <li><a class="active" href="attractions.html">Attractions</a></li>
+        <li><a href="connect.html">Connect</a></li>
+        <li>
+          <a
+            href="https://www.booking.com/index.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaKACiAEBmAExuAEHyAEM2AEB6AEB-AECiAIBqAIDuAKe4qHABsACAdICJDc3NDUwODFjLTRhN2UtNGZkYy04ZGI0LWE3Y2E2NGVhOTA3MNgCBeACAQ&selected_currency=USD&sid=89a6afa4ecb9250e8da5d68b6e83fa90"
+            target="_blank"
+            >Book a Trip <i class="fa fa-external-link"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  background-color: #fff6e8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 12vh 8vh minmax(90vh, max-content);
+}
+
+.header {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: #6da23f;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-left: 5%;
+  gap: 3%;
+}
+
+.header-left {
+  /* justify-self: start; */
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.info {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: white;
+}
+
+.home-icon {
+  height: 45px;
+  width: 45px;
+}
+
+.nav-collapse .active {
+  color: #124162;
+  text-decoration: underline;
+  -webkit-text-stroke: 0.5px #ffffff;
+}
+
+.nav-collapse a {
+  font-size: 16px;
+  font-family: "Lilita One", sans-serif;
+}
+
+.search-bar-container {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin: 0 1%;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2%;
+}
+input {
+  height: 50%;
+  width: 90%;
+  border-radius: 8px;
+  padding: 0 1%;
+}
+
+.btn {
+  min-width: fit-content;
+  height: 50%;
+  width: 10%;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(128, 186, 78, 1) 0%,
+    rgba(215, 124, 22, 1) 100%
+  );
+  border: none;
+  color: #ffffff;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.attractions-content-container {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  margin-bottom: 2%;
+}
+
+.attractions-list {
+  list-style-type: none;
+  padding-left: 1%;
+}
+
+.attractions-list a {
+  color: #2e2e2e;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: color 400ms ease;
+}
+
+.attractions-list a img {
+  margin: 0 1%;
+}
+
+.attractions-list a:hover {
+  color: #d77c16;
+}
+
+.attractions-list a img:hover {
+  animation: grow 0.5s linear forwards;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.005);
+  }
+
+  100% {
+    transform: scale(1.01);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    /* background-color: #80ba4e;
+    position: sticky;
+    top: 0;
+    z-index: 10; */
+  }
+
+  .header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding-left: 5%;
+    gap: 3%;
+  }
+
+  .info {
+    font-size: 40px;
+    /* font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    /* color: white; */
+  }
+
+  .home-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .nav-collapse .active {
+    text-decoration: underline;
+    -webkit-text-stroke: 0.5px #ffffff;
+  }
+
+  .nav-collapse a {
+    font-size: 24px;
+    font-family: "Lilita One", sans-serif;
+  }
+}
+
+@media screen and (min-width: 897px) {
+  .grid {
+    grid-template-columns: 20vw 20vw 40vw 20vw;
+    grid-template-rows: 12vh 8vh minmax(90vh, max-content);
+  }
+
+  .search-bar-container {
+    grid-row: 2/3;
+    grid-column: 2/4;
+  }
+
+  form {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2%;
+  }
+  input {
+    height: 50%;
+    width: 90%;
+    border-radius: 8px;
+    padding: 0 1%;
+  }
+
+  .btn {
+    min-width: fit-content;
+    height: 50%;
+    width: 10%;
+    border-radius: 8px;
+    background: linear-gradient(
+      90deg,
+      rgba(128, 186, 78, 1) 0%,
+      rgba(215, 124, 22, 1) 100%
+    );
+    border: none;
+    color: #ffffff;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  .attractions-content-container {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    margin-bottom: 2%;
+  }
+
+  .attractions-list {
+    list-style-type: none;
+    padding-left: 1%;
+  }
+
+  .attractions-list a {
+    color: #2e2e2e;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: color 400ms ease;
+  }
+
+  .attractions-list a img {
+    margin-left: 1%;
+  }
+
+  .attractions-list a:hover {
+    color: #d77c16;
+  }
+}
