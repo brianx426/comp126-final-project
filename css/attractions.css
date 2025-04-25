@@ -30,12 +30,11 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding-left: 5%;
+  padding-left: 2%;
   gap: 3%;
 }
 
 .header-left {
-  /* justify-self: start; */
   width: 40%;
   display: flex;
   flex-direction: row;
@@ -151,31 +150,17 @@ input {
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    grid-row: 1/2;
-    grid-column: 1/5;
-    /* background-color: #80ba4e;
-    position: sticky;
-    top: 0;
-    z-index: 10; */
-  }
-
   .header-box {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    padding-left: 5%;
     gap: 3%;
   }
 
   .info {
     font-size: 40px;
-    /* font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal; */
-    /* color: white; */
   }
 
   .home-icon {
@@ -198,6 +183,11 @@ input {
   .grid {
     grid-template-columns: 20vw 20vw 40vw 20vw;
     grid-template-rows: 12vh 8vh minmax(90vh, max-content);
+  }
+
+  .header {
+    grid-row: 1/2;
+    grid-column: 1/5;
   }
 
   .search-bar-container {
