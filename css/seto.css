@@ -1,0 +1,9 @@
+.info {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 911px) {
+  .info {
+    font-size: 32px;
+  }
+}
