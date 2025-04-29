@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kagawa - Ritsurin Garden</title>
+    <link href="css/ritsurin.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive-nav.css" rel="stylesheet" type="text/css" />
+    <script src="js/responsive-nav.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="grid">
+      <header class="header">
+        <div class="header-box">
+          <!-- left side -->
+          <div class="header-left">
+            <a href="index.html">
+              <img
+                class="home-icon"
+                src="img/white-home.png"
+                alt="white home icon"
+              />
+            </a>
+            <h1 class="info">Kagawa - Ritsurin Garden</h1>
+          </div>
+          <!-- right side -->
+          <nav class="nav-collapse">
+            <ul>
+              <li><a class="active" href="info.html">Info</a></li>
+              <li>
+                <a href="attractions.html">Attractions</a>
+              </li>
+              <li><a href="connect.html">Connect</a></li>
+              <li>
+                <a
+                  href="https://www.booking.com/index.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaKACiAEBmAExuAEHyAEM2AEB6AEB-AECiAIBqAIDuAKe4qHABsACAdICJDc3NDUwODFjLTRhN2UtNGZkYy04ZGI0LWE3Y2E2NGVhOTA3MNgCBeACAQ&selected_currency=USD&sid=89a6afa4ecb9250e8da5d68b6e83fa90"
+                  target="_blank"
+                  >Book a Trip <i class="fa fa-external-link"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="article-container">
+        <h2>Ritsurin Garden (栗林公園)</h2>
+        <h3>Quick Facts</h3>
+        <p>
+          Ritsurin Park, located in Takamatsu, is one of Japan's most celebrated
+          historical gardens. Ritsurin Park contains stunning and beautiful
+          scenery with its unique setting against the backdrop of Mt. Shiun. The
+          blending of natural landscape with human design makes this park a
+          sight to behold! Ritsurin Park contains 6 tranquil ponds, 13 carefully
+          sculpted hills, and over 1,000 pine trees!
+        </p>
+        <h3>Activities</h3>
+        <p>
+          Ritsurin Park offers a varieties of activities to enjoy. Come partake
+          in these activities and take in the beautiful scenery!
+        </p>
+        <br />
+        <ol>
+          <li>
+            Sip tea and enjoy the view at the Kikugetsu-tei Teahouse, located in
+            the heart of the garden. Enjoy matcha and sweets while gazing out at
+            the serene South Pond. It is said this scene has not changed in
+            centuries!
+          </li>
+          <li>
+            Take a boat ride across the South Pond in a wasen (traditional
+            wooden boat) guided by boatmen in traditional attire. You'll feel
+            like you were back in the Edo Days!
+          </li>
+          <li>
+            Each season offers different sights, so be sure to visit every
+            season!
+          </li>
+        </ol>
+      </div>
+
+      <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        <p>Click on an image to enlarge it!</p>
+        <div class="responsive">
+          <div class="gallery-img">
+            <a target="_blank" href="img/ritsurin.jpg">
+              <img
+                src="img/ritsurin.jpg"
+                alt="Ritsurin"
+                width="600"
+                height="400"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery-img">
+            <a target="_blank" href="img/ritsurin4.webp">
+              <img
+                src="img/ritsurin4.webp"
+                alt="Ritsurin"
+                width="600"
+                height="400"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery-img">
+            <a target="_blank" href="img/ritsurin2.jpg">
+              <img
+                src="img/ritsurin2.jpg"
+                alt="Ritsurin"
+                width="600"
+                height="400"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery-img">
+            <a target="_blank" href="img/ritsurin3.jpg">
+              <img
+                src="img/ritsurin3.jpg"
+                alt="Ritsurin"
+                width="600"
+                height="400"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true, // Boolean: Use CSS3 transitions, true or false
+        transition: 284, // Integer: Speed of the transition, in milliseconds
+        label: "Menu", // String: Label for the navigation toggle
+        insert: "after", // String: Insert the toggle before or after the navigation
+        customToggle: "", // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative", // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
+        jsClass: "js", // String: 'JS enabled' class which is added to <html> element
+        init: function () {}, // Function: Init callback
+        open: function () {}, // Function: Open callback
+        close: function () {}, // Function: Close callback
+      });
+    </script>
+  </body>
+</html>
